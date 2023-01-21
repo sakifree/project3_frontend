@@ -9,11 +9,15 @@ API
 Mongoose DB
 Schema
 Bootstrap
+Netlify
 
 
 
 ### Wireframes
-![ ] (https://imgur.com/a/BvmBVlo
+
+![Structure] 
+(https://imgur.com/a/BvmBVlo)
+
 
 
 
