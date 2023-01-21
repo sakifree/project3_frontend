@@ -2,20 +2,20 @@
 An application to create, save, edit, update and/or delete licenses for an individual
 
 ### Technologies/Methods Used
-React
-CSS
-CRUD
-API
-Mongoose DB
-Schema
-Bootstrap
-Netlify
+- React
+- CSS
+- CRUD
+- API
+- Mongoose DB
+- Schema
+- Bootstrap
+- Netlify
 
 
 
 ### Wireframes
 
-![Structure] 
+![Comoponent Architecture] 
 (https://imgur.com/a/BvmBVlo)
 
 
