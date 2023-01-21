@@ -33,7 +33,7 @@ function Index(props) {
            
             <div className='container'>
             <h2>LICENSES</h2>
-                {licenses.map((bookMark) => (
+                {licenses.map((license) => (
                     <div className="card" key={license._id}>
                         <Link to={`/${license._id}`}>
                             <h1>{license.title}</h1>
