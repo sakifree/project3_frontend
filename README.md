@@ -15,8 +15,9 @@ An application to create, save, edit, update and/or delete licenses for an indiv
 
 ### Wireframes
 
-![Comoponent Architecture] 
-(https://imgur.com/a/BvmBVlo)
+Component Architecture
+
+<img src="https://i.imgur.com/yzRJlEt.png">
 
 
 
