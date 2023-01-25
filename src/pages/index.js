@@ -17,7 +17,7 @@ function Index(props) {
                 </div>
                 <div>
                     <label for="title" class="form-label">Issue Date</label>
-                    <input type="date" class="form-control" name="title" placeholder="01/01/2023"/>
+                    <input type="date" class="form-control" name="date" placeholder="01/01/2023"/>
                 </div>
                 <div class="mb-3">
                     <label for="title" class="form-label">First Name</label>
