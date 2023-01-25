@@ -16,7 +16,11 @@ function Index(props) {
                     <input type="input" class="form-control" name="title" placeholder="License Number"/>
                 </div>
                 <div>
-                    <label for="title" class="form-label">Issue Date</label>
+                    <label for="title" class="form-label">Date Issued</label>
+                    <input type="date" class="form-control" name="date" placeholder="01/01/2023"/>
+                </div>
+                <div>
+                    <label for="title" class="form-label">Expiration Date</label>
                     <input type="date" class="form-control" name="date" placeholder="01/01/2023"/>
                 </div>
                 <div class="mb-3">
@@ -25,7 +29,11 @@ function Index(props) {
                 </div>
                 <div class="mb-3">
                     <label for="title" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" name="url" placeholder="Last Name" />
+                    <input type="text" class="form-control" name="title" placeholder="Last Name" />
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">License Type</label>
+                    <input type="text" class="form-control" name="title" placeholder="Buisness License" />
                 </div>
                 <button type="submit" class="btn btn-primary"> Create License </button>
             </Form>
