@@ -7,3 +7,20 @@ export const licensesLoader = async () => {
     return licenses;
 }
 
+export const licenseLoader = async ({params}) => {
+
+    const response = await fetch(URL+"/findmylicense/"+params.id);
+    const license = await response.json();
+    
+    // const license = {   
+    //                     _id: "12345",
+    //                     licenseNumber: "12345", 
+    //                     firstName: "Naveen",
+    //                     lastName: "Kumar",
+    //                     datesIssued: ""
+    //                 }
+
+    return license;
+
+}
+
