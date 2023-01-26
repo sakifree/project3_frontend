@@ -9,7 +9,7 @@ function Show(props) {
         <div>
 
             <h2> License Details </h2>
-            <h3> License Number:g { license.number } </h3>
+            <h3> License Number: { license.number } </h3>
 
             <h3> First Name:     { license.firstName } </h3>
             <h3> Last Name:      { license.lastName } </h3>
