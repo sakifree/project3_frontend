@@ -10,6 +10,7 @@ An application to create, save, edit, update and/or delete licenses for an indiv
 - Schema
 - Bootstrap
 - Netlify
+- Render
 
 
 
