@@ -27,7 +27,7 @@ function Index(props) {
                     <label for="title" class="form-label">First Name</label>
                     <input type="text" class="form-control" name="firstName" placeholder="First Name" />
                 </div>
-                <div class="mb-3">
+                <div>
                     <label for="title" class="form-label">Last Name</label>
                     <input type="text" class="form-control" name="lastName" placeholder="Last Name" />
                 </div>
