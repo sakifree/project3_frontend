@@ -44,8 +44,9 @@ function Index(props) {
             <h2>LICENSES</h2>
                 {licenses.map((license) => (
                     <div className="card" key={license._id}>
-                        <Link to={`/${license._id}`}>
-                            <h1>{license.title}</h1>
+                        <Link to={`/findmylicense/${license._id}`}>
+                            <h1>{license.firstName} {license.lastName} {license.number}</h1>
+
                         </Link>
                     
                     </div>
