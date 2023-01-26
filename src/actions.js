@@ -29,7 +29,6 @@ export const createAction = async ({ request }) => {
 
 export const updateAction = async ({ request, params }) => {
 
-    console.log("Updated license is "+ updatedLicense.licenseNumber)
 
     const formData = await request.formData();
     console.log(formData);
