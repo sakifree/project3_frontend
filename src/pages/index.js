@@ -5,15 +5,22 @@ function Index(props) {
     const licenses = useLoaderData();
     return (
             <div className='container'>
-            <h2>LICENSES</h2>
+            <br></br>
+            <h5>Active Licenses</h5>
+            <br></br>
                 {licenses.map((license) => (
-                    <div className="card" key={license._id}>
-                        <Link to={`/${license._id}`}>
-                            <h1>{license.firstName} {license.lastName} {license.number}</h1>
 
-                        </Link>
+                    <ul class="list-group"> 
+                        
+                        <div className="card" key={license._id}>
+
+                            <Link to={`/${license._id}`}>
+                            <li class="list-group-item">{license.firstName} {license.lastName} (Lic Num: {license.number})</li>
+                            </Link>
                     
-                    </div>
+                        </div>
+
+                    </ul>
                 ))}
             </div>
     );

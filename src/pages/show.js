@@ -7,46 +7,59 @@ function Show(props) {
     return (
 
         <div>
+            <br></br>
 
-            <h2> License Details </h2>
-            <h3> License Number: { license.number } </h3>
+            <div className="container"> 
+            <h3> License Details </h3>
+            <hr></hr>
+            <h5> License Number:  </h5>
+            <p>{ license.number }</p>
+            
+            <h5> First Name:</h5>
+            <p>{ license.firstName } </p>
 
-            <h3> First Name:     { license.firstName } </h3>
-            <h3> Last Name:      { license.lastName } </h3>
-            {/* <h3> Type of Insurance: { license.type } </h3> */}
-            <h4> Issue Date:     { license.dateIssued } </h4>
-            <h4> Expiry Date:    { license.expiryDate } </h4>
+            <h5> Last Name:</h5>
+            <p>{ license.lastName }</p>
+
+            <h5> Issue Date:</h5>
+            <p>{ license.dateIssued }</p>
+
+            <h5> Expiry Date:</h5>
+            <p> { license.expiryDate } </p>
+
+        </div>
 
             <br></br>
 
-            <div>
+        <div className="container">
                 <h2> Update License </h2>
+                <hr></hr>
 
                 <Form action= {`/update/${license._id}`} method="put">
 
-                    <div>
-                        <label for="number"> License Number </label>
-                        <input defaultValue={license.number} type="input" name="number" />
+                    <div className="mb3">
+                        <label for="number" className="form-label"> License Number </label>
+                        <input defaultValue={license.number} type="input" className="form-control" name="number" />
                     </div>
 
-                    <div>
-                        <label for="firstName"> First Name </label>
-                        <input defaultValue={license.firstName} type="input" name="firstName" />
+                    <div className="mb3">
+                        <label for="firstName" className="form-label"> First Name </label>
+                        <input defaultValue={license.firstName} type="input" className="form-control" name="firstName" />
                     </div>
 
-                    <div>
-                        <label for="lastName"> Last Name </label>
-                        <input defaultValue={license.lastName} type="input" name="lastName" />
+                    <div className="mb3">
+                        <label for="lastName" className="form-label"> Last Name </label>
+                        <input defaultValue={license.lastName} type="input" className="form-control" name="lastName" />
                     </div>
 
-                    <div>
-                        <label for="dateIssued"> Issue Date </label>
-                        <input defaultValue={license.dateIssued} type="input" name="dateIssued" />
+                    <div className="mb3">
+                        <label for="dateIssued" className="form-label"> Issue Date </label>
+                        <input defaultValue={license.dateIssued} type="input" className="form-control" name="dateIssued" />
                     </div>
 
-                    <div>
-                        <label for="expiryDate"> Expiry Date </label>
-                        <input defaultValue={license.expiryDate} type="input" name="expiryDate" />
+                    <div className="mb3">
+                        <label for="expiryDate" className="form-label"> Expiry Date </label>
+                        <input defaultValue={license.expiryDate} type="input" className="form-control" name="expiryDate" />
                     </div>
 
                     {/* <label for="type">Type of Insurance </label>
@@ -59,14 +72,15 @@ function Show(props) {
                     </select> */}
 
                     <br></br>
-                    <input type="submit" value="Update License" />
+                    <button type="submit" className="btn btn-primary">Update License</button>
+                    {/* <input type="submit" value="Update License" /> */}
 
                 </Form>
 
                 <br></br>
 
                 <Form action={`/delete/${license._id}`} method="delete">
-                    <button type="submit">Delete</button>
+                    <button type="submit" className="btn btn-danger">Delete</button>
                 </Form>
 
 
